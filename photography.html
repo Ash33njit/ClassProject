@@ -44,66 +44,72 @@
   </div>
   <div id="content">
     <div id="heading">
-      <h1>Article Heading</h1>
-    </div>
-    <div id="article_body">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla tristique leo hendrerit tristique.
-        Pellentesque erat sem, viverra id blandit vehicula, molestie ut tellus. Maecenas pulvinar, dui sit amet
-        condimentum
-        mattis, tortor quam ullamcorper leo, eu feugiat eros felis vel neque. Proin congue tellus sed risus malesuada
-        ullamcorper. Nunc maximus non odio fringilla placerat. Pellentesque in malesuada nulla. Quisque vel posuere
-        elit.
-        Etiam et nisi et tellus euismod aliquam et sed ante. Aliquam in tempus dolor. Donec molestie magna sed nisi
-        dignissim, ut dapibus tortor pretium. Praesent eu mollis risus. Aliquam congue et orci ac ultricies. Sed
-        scelerisque
-        tempor justo, quis mollis dui egestas at. Sed blandit tellus justo, vitae mattis dolor facilisis sit amet. Ut
-        ultricies tellus elit, non vulputate mauris fringilla sit amet. Aliquam commodo, velit et laoreet vulputate,
-        diam
-        orci lobortis velit, in eleifend lacus tellus et enim.
-      </p>
-      <p>
-        Aenean nec accumsan nulla. Praesent nisl arcu, faucibus eu pretium ac, volutpat ultricies ex. Etiam luctus velit
-        et
-        elit suscipit molestie. Sed facilisis, lorem vitae accumsan volutpat, nulla tortor tempor ex, mollis varius
-        lacus
-        justo id risus. Fusce enim urna, interdum sit amet molestie ac, ullamcorper sed orci. Curabitur placerat odio ac
-        ex
-        auctor, ut pellentesque dolor viverra. In sit amet dolor eu justo tristique facilisis in eget risus. Nullam
-        congue
-        ipsum ac quam mollis lobortis. Morbi at efficitur lacus, nec malesuada odio. Nullam varius ligula enim, nec
-        tincidunt sapien feugiat vitae.
-      </p>
-      <p>
-        Mauris accumsan urna eu facilisis commodo. Sed aliquet dui quis posuere tempor. Aenean non velit cursus, laoreet
-        lorem a, mattis leo. Donec sollicitudin arcu justo, egestas mollis mi aliquam at. Suspendisse ultrices libero a
-        massa congue, a auctor ipsum sagittis. Mauris dignissim sit amet libero sit amet condimentum. Sed eget aliquam
-        lacus. Fusce urna velit, tincidunt in diam eget, hendrerit dictum dui. Ut iaculis urna at mauris volutpat, sed
-        eleifend diam sagittis.
-      </p>
-      <p>
-        Cras sit amet leo nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget erat non est
-        efficitur
-        suscipit eu vel enim. Suspendisse eu consequat massa. Phasellus placerat magna leo, quis congue erat commodo
-        auctor.
-        Sed maximus dictum nunc, eu semper odio eleifend id. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </p>
-      <p>
-        Sed eu nisl sed nulla bibendum euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet
-        tellus sapien. Phasellus vitae dignissim magna, id feugiat nulla. In consectetur risus vel tempus mollis. Sed
-        lobortis maximus tellus ut volutpat. Nunc malesuada volutpat dapibus. Duis in vulputate arcu. Suspendisse
-        ultricies
-        leo a lorem pulvinar, eget auctor nisl laoreet. Morbi vitae vehicula nisl. Donec vulputate massa tortor, quis
-        maximus metus sagittis in. Suspendisse potenti. Sed dignissim, felis vel condimentum accumsan, ante urna semper
-        sem,
-        non scelerisque magna neque eget tellus. In ac elementum lorem. Integer vel augue cursus, molestie lectus ac,
-        suscipit nibh.
-      </p>
+      <h1>Photos</h1>
     </div>
   </div>
-  <div id="sidebar">
-    <div id="sidebar_image">
-      <img height="294" src="img/AdibHaqueHeadshot.jpg" width="294"/>
+  <!-- Container for the image gallery -->
+  <div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="img_woods_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="img_5terre_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="img_mountains_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="img_lights_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="img_nature_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="img_snow_wide.jpg" style="width:100%">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="IMG1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="IMG2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="IMG3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="IMG4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="IMG5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="IMG6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      </div>
     </div>
   </div>
   <div id="footer">
